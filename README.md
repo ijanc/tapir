@@ -3,7 +3,7 @@
 An AI agent coding.
 
 <p align="center">
-  <img src="screenshot.jpg" width="800" alt="tapir demo">
+  <img src="screenshot.png" width="800" alt="tapir demo">
 </p>
 
 > The [tapir](https://en.wikipedia.org/wiki/Tapir) is a resilient, ancient
