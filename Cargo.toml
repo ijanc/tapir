@@ -1,0 +1,28 @@
+[package]
+name = "tapir"
+version = "0.1.0"
+edition = "2024"
+license = "ISC"
+repository = "https://git.sr.ht/~ijanc/tapir"
+rust-version = "1.90.0" # openbsd-7.8
+description = "An AI agent coding"
+categories = ["command-line-utilities", "development-tools", "web-programming"]
+
+[dependencies]
+libc = "0.2"
+minreq = { version = "2", features = ["https-rustls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.dev]
+debug = false
+
+[profile.test]
+debug = false
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
